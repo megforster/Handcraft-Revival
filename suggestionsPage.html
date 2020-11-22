@@ -12,6 +12,168 @@
 
     </div>
 
+    <div id="container">
+        <div class="row">
+            <div class="col">
+                <form class="needs-validation card p-3 bg-light" novalidate>
+                    <div class="card-header">
+                        Suggest A New Tutorial/Learning Resource
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="craftCategory" class="col-sm-4 col-form-label">Craft Category</label>
+                        <div class="col-sm-8">
+                                <select id="craftCategory" class="form-control" required>
+                                    <option>Choose...</option>
+                                    <option>Crochet</option>
+                                    <option>Knitting</option>
+                                    <option>Sewing</option>
+                                    <option>Wood Working</option>
+                                    <option>Candle Making</option>
+                                    <option>Jewlery Making</option>
+                                    <option>Metal Work</option>
+                                    <option>Glass Work</option>
+                                    <option>Leather Work</option>
+                                    <option>Pottery</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a craft.
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="craftTopic" class="col-sm-4 col-form-label">Craft Topic</label>
+                        <div class="col-sm-8">
+                                <select id="craftTopic" class="form-control" required>
+                                    <option selected>Choose...</option>
+                                    <option>Supplies</option>
+                                    <option>The Basics</option>
+                                    <option>Beginner Projects</option>
+                                    <option>History of the Craft</option>
+                                    <option>Popular Crafters</option>
+                                    <option>Advanced Resources</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a craft topic.
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="resourceTopic" class="col-sm-4 col-form-label">Resource Topic</label>
+                        <div class="col-sm-8">
+                                <input type="text" class="form-control" id="resourceTopic" required>
+                                <div class="invalid-feedback">
+                                    Please describe the resource topic.
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="resourceLink" class="col-sm-4 col-form-label">Resource Link</label>
+                        <div class="col-sm-8">
+                                <input type="url" class="form-control" id="resourceLink" required>
+                                <div class="invalid-feedback">
+                                    Please provide a resource to the link.
+                                </div>
+                        </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit Suggestion!</button>
+                    </div>  
+                </form>
+            </div>
+            <div class="col">
+                <form class="needs-validation card p-3 bg-light" novalidate>
+                    <div class="card-header">
+                        Suggest A New Craft Category
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="craftName" class="col-sm-4 col-form-label">Craft Name</label>
+                        <div class="col-sm-8">
+                                <input type="text" class="form-control" id="craftName" required>
+                                <div class="invalid-feedback">
+                                    Please provide the name of the craft.
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label">Similar To A Craft Currently Offered?</label>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkYes" value="Yes">
+                                <label class="form-check-label" for="checkYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkNo" value="No">
+                                <label class="form-check-label" for="checkNo">No</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="craftOverview" class="col-sm-4 col-form-label">Overview Of Craft</label>
+                        <div class="col-sm-8">
+                                <input type="text" class="form-control" id="craftOverview" required>
+                                <div class="invalid-feedback">
+                                    Please provide an overview of the craft.
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="resourceOne" class="col-sm-5 col-form-label">Example Resource #1</label>
+                        <div class="col-sm-7">
+                                <input type="text" class="form-control" id="resourceOne" required>
+                                <div class="invalid-feedback">
+                                    Please provide at least one craft resource link
+                                </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="resourceTwo" class="col-sm-5 col-form-label">Example Resource #2</label>
+                        <div class="col-sm-7">
+                                <input type="text" class="form-control" id="resourceTwo">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="resourceThree" class="col-sm-5 col-form-label">Example Resource #3</label>
+                        <div class="col-sm-7">
+                                <input type="text" class="form-control" id="resourceThree">
+                        </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit Suggestion!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <form class="needs-validation card p-3 bg-light" novalidate>
+                    <div class="card-header">
+                        Suggest An Improvement To The Site
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label class="col-form-label" for="idea">Idea</label>
+                        </div>
+                        <div class="form-group row">
+                            <textarea class="form-control" id="idea" required></textarea>
+                            <div class="invalid-feedback">
+                                Please describe your idea
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label" for="reason">Justification</label>
+                        </div>
+                        <div class="form-group row">
+                            <textarea class="form-control" id="reason" required></textarea>
+                            <div class="invalid-feedback">
+                                Please describe your justification
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit Suggestion!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -20,6 +182,23 @@
         $(function(){
             $("#navigation").load("navigationBar.html #navigation-bar"); 
         });
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 </html>
