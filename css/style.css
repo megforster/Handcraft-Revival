@@ -1,0 +1,17 @@
+:root{
+    --primary_color_light:#a9d88d;
+}
+
+.centered{
+    text-align: center;
+}
+
+.primaryBackgroundLight{
+    background-color: var(--primary_color_light);
+}
+
+.nav-link:hover, 
+.dropdown-item:hover,
+.primaryColorLight{
+    color: var(--primary_color_light) !important;
+}
