@@ -15,3 +15,11 @@
 .primaryColorLight{
     color: var(--primary_color_light) !important;
 }
+
+.mainFont{
+    font-family: "Pacifico", cursive;
+}
+
+.secondaryFont{
+    font-family: "Open Sans", sans-serif;
+}
