@@ -1,25 +1,41 @@
-:root{
-    --primary_color_light:#a9d88d;
-}
+@font-face {
+  font-family: 'Pacifico';
+  src: url(../fonts/Pacifico/Pacifico-Regular.ttf); }
 
-.centered{
-    text-align: center;
-}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); }
 
-.primaryBackgroundLight{
-    background-color: var(--primary_color_light);
-}
+.centered {
+  text-align: center; }
 
-.nav-link:hover, 
-.dropdown-item:hover,
-.primaryColorLight{
-    color: var(--primary_color_light) !important;
-}
+.primaryBackgroundLight {
+  background-color: #a9d88d; }
 
-.mainFont{
-    font-family: "Pacifico", cursive;
-}
+.nav-link:hover {
+  color: #a9d88d !important; }
 
-.secondaryFont{
-    font-family: "Open Sans", sans-serif;
-}
+.dropdown-item:hover {
+  color: #a9d88d !important; }
+
+.dropdown-item:focus {
+  background: none; }
+
+.primaryColorLight {
+  color: #a9d88d; }
+
+.mainFont {
+  font-family: "Pacifico", cursive; }
+
+.secondaryFont {
+  font-family: "Open Sans", sans-serif; }
+
+.width1000 {
+  width: 1000px; }
+
+.formSubmit {
+  border: 1px solid black; }
+  .formSubmit:hover {
+    box-shadow: 2px 2px 4px 2px black; }
+  .formSubmit:focus {
+    box-shadow: none; }

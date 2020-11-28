@@ -1,0 +1,62 @@
+@font-face{
+    font-family: 'Pacifico';
+    src:url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face{
+    font-family: 'Open Sans';
+    src:url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+$color-primary-light:#a9d88d;
+
+$main-font: "Pacifico", cursive;
+$secondary-font: "Open Sans", sans-serif;
+
+.centered{
+    text-align: center;
+}
+
+.primaryBackgroundLight{
+    background-color: $color-primary-light;
+}
+
+.nav-link{
+    &:hover{
+        color: $color-primary-light !important;
+    }
+}
+
+.dropdown-item{
+    &:hover{
+        color: $color-primary-light !important;
+    }
+    &:focus{
+        background: none;
+    }
+}
+
+.primaryColorLight{
+    color: $color-primary-light;
+}
+
+.mainFont{
+    font-family: $main-font;
+}
+
+.secondaryFont{
+    font-family: $secondary-font;
+}
+
+.width1000{
+    width: 1000px;
+}
+
+.formSubmit{
+    border: 1px solid black;
+    &:hover{
+        box-shadow: 2px 2px 4px 2px black;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
