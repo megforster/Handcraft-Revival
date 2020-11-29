@@ -60,3 +60,24 @@ $secondary-font: "Open Sans", sans-serif;
         box-shadow: none;
     }
 }
+
+.centeredImage{
+    margin: auto;
+    display: block;
+}
+
+.carousel-item{
+    img {
+        width:1000px;
+        height:600px;
+      }
+}
+
+.noBold{
+    font-weight: normal;
+}
+
+.cardMargin{
+   margin:10px;
+   padding:5px;
+}

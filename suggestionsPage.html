@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handcraft Revival</title>
-    <link rel="icon" href="Images/logo.png">
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +23,7 @@
                             <label for="craftCategory" class="col-sm-4 col-form-label">Craft Category</label>
                         <div class="col-sm-8">
                                 <select id="craftCategory" class="form-control" required>
-                                    <option>Choose...</option>
+                                    <option selected disabled value="">Choose...</option>
                                     <option>Crochet</option>
                                     <option>Knitting</option>
                                     <option>Sewing</option>
@@ -44,7 +44,7 @@
                             <label for="craftTopic" class="col-sm-4 col-form-label">Craft Topic</label>
                         <div class="col-sm-8">
                                 <select id="craftTopic" class="form-control" required>
-                                    <option selected>Choose...</option>
+                                    <option selected disabled value="">Choose...</option>
                                     <option>Supplies</option>
                                     <option>The Basics</option>
                                     <option>Beginner Projects</option>
@@ -79,7 +79,7 @@
                     </div>  
                 </form>
                 <br>
-                <img src="Images/logo.png">
+                <img src="images/logo.png" class="centeredImage">
             </div>
             <div class="col">
                 <form class="needs-validation card p-3 primaryBackgroundLight" novalidate>
@@ -99,12 +99,15 @@
                         </div>
                         <div class="form-group row">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkYes" value="Yes">
+                                <input class="form-check-input" name="Similar" type="checkbox" id="checkYes" value="Yes">
                                 <label class="form-check-label" for="checkYes">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkNo" value="No">
+                                <input class="form-check-input" name="Similar" type="checkbox" id="checkNo" value="No">
                                 <label class="form-check-label" for="checkNo">No</label>
+                            </div>
+                            <div id="checkboxInvalid" class="invalid-feedback">
+                                Please check one checkbox.
                             </div>
                         </div>
                         <div class="form-group row">
@@ -137,7 +140,7 @@
                                 <input type="text" class="form-control" id="resourceThree">
                         </div>
                         </div>
-                        <button class="btn formSubmit mainFont" type="submit">Submit Suggestion!</button>
+                        <button id = "craftCategorySubmit" class="btn formSubmit mainFont" type="submit">Submit Suggestion!</button>
                     </div>
                 </form>
             </div>
@@ -167,7 +170,7 @@
                     </div>
                 </form>
                 <br>
-                <img src="Images/logo.png">
+                <img class="centeredImage" src="images/logo.png">
             </div>
         </div>
     </div>
@@ -189,10 +192,26 @@
                 // Loop over them and prevent submission
                 var validation = Array.prototype.filter.call(forms, function(form) {
                 form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
+                    var failed = false;
+                    
+                    let checked = $("input[type=checkbox]:checked").length;
+                    if(checked!=1){
+                        $("[name='Similar']").attr('required', true);
+                        $("#checkboxInvalid").css("display","block")
+                    }else{
+                        $("[name='Similar']").attr('required', false);
+                        $("#checkboxInvalid").css("display","none")
                     }
+
+                    if (form.checkValidity() === false) {
+                        failed = true;
+                    }
+
+                    if(failed){
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
                     form.classList.add('was-validated');
                 }, false);
                 });
