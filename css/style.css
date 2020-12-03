@@ -63,3 +63,27 @@
 
 .cardMargin2 {
   margin: 0px 50px; }
+
+#myModal .modal-header {
+  background-color: #a9d88d; }
+  #myModal .modal-header button:focus {
+    outline: 0 !important; }
+
+#myModal h5 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  margin: auto; }
+
+#myModal .modal-body {
+  font-family: "Open Sans", sans-serif;
+  position: relative; }
+  #myModal .modal-body button {
+    background-color: #a9d88d;
+    color: white;
+    font-family: "Pacifico", cursive;
+    border-color: #a9d88d;
+    position: absolute;
+    right: 10px;
+    bottom: 5px; }
+    #myModal .modal-body button:hover {
+      box-shadow: 2px 2px 4px 2px black; }

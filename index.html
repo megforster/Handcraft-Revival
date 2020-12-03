@@ -12,6 +12,22 @@
     <div id="navigation">
 
     </div>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome to Handcraft Revival!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This site is a WIP so some sections have been disabled or are not fully implemented. Please check back later for more content :)</p>
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="carouselExampleIndicators" class="carousel slide width1000" data-ride="carousel" style="margin: 50px auto 0px auto;">
         <ol class="carousel-indicators">
@@ -69,91 +85,10 @@
       </div>
       <br>
       <br>
-      <!-- <div id="mainContent" class="centered">
-        <h1 class="mainFont">Recent Crafting Favorites</h1>
-        <br>
-        <div class="row">
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem; ">
-                    <img class="card-img-top" src="images/babyBootiesHat.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Rag Quilt Baby Hats And Booties by Erica Fedor</h5>
-                      <p class="card-text">A sweet set of matching hat and booties.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/sewnBookmark.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Scrappy Fabric Bookmark by Amy from Ameroonie Designs</h5>
-                      <p class="card-text">Cute and easy bookmarks.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/leatherCordHolder.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Leather Earphone Holder by Laura Kaesshaefer</h5>
-                      <p class="card-text">A chic way to cary earphones and cords tangle free.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/candles.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Terracotta Votives by Eden from Sugar and Charm</h5>
-                      <p class="card-text">The perfect outdoor candle.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/knitScarf.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Color Block Scarf by Anne Weil (Flax & Twine)</h5>
-                      <p class="card-text">Quick and easy scarf with cute tassles.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/woodenBox.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Wooden Box by photozz (Instructables)</h5>
-                      <p class="card-text">Simple and easy wooden box perfect for beginners.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/jewlery.jpg" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Silver and Pearl Bunny Necklace by Lorraine Sanderson</h5>
-                      <p class="card-text">A fun and light Spring necklace.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card primaryBackgroundLight cardMargin" style="width: 18rem;">
-                    <img class="card-img-top" src="images/potteryBowl.png" alt="Card image cap" height="225">
-                    <div class="card-body secondaryFont">
-                      <h5 class="card-title">Small Hand Thrown Pottery Bowl by Eapodlas (Instructables)</h5>
-                      <p class="card-text">A simple, classic clay bowl.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-      </div> -->
-
       <div class="container centered">
         <h1 class="centered mainFont">Recent Crafting Favorites</h1>
         <div class="row secondaryFont">
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                     <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                       <img class="card-img-top" src="images/babyBootiesHat.jpg" alt="Card image cap" height="225">
                       <div class="card-body secondaryFont">
@@ -162,7 +97,7 @@
                       </div>
                     </div>
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/sewnBookmark.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -172,7 +107,7 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/leatherCordHolder.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -182,7 +117,7 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/candles.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -194,7 +129,7 @@
             </div>
         </div>
         <div class="row secondaryFont">
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/knitScarf.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -203,7 +138,7 @@
                   </div>
                   </div>
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/woodenBox.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -212,7 +147,7 @@
                   </div>
                   </div>
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/jewlery.jpg" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -222,7 +157,7 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col-xs-1 col-md-6 col-lg-4 col-xl-3">
                 <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
                   <img class="card-img-top" src="images/potteryBowl.png" alt="Card image cap" height="225">
                   <div class="card-body secondaryFont">
@@ -240,6 +175,7 @@
     <script>
         $(function(){
             $("#navigation").load("navigationBar.html #navigation-bar"); 
+            $('#myModal').modal('show')
         });
     </script>
 </body>

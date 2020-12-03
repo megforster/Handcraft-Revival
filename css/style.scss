@@ -93,3 +93,34 @@ $secondary-font: "Open Sans", sans-serif;
 .cardMargin2{
     margin: 0px 50px;
 }
+#myModal{
+    .modal-header{
+        background-color: $color-primary-light;
+        button{
+            &:focus{
+                outline:0 !important;
+            }
+        }
+    }
+    h5{
+        font-family: $main-font;
+        color:white;
+        margin: auto;
+    }
+    .modal-body{
+        font-family: $secondary-font;
+        position: relative;
+        button{
+            background-color: $color-primary-light;
+            color:white;
+            font-family: $main-font;
+            border-color: $color-primary-light;
+            position: absolute;
+            right: 10px;
+            bottom: 5px; 
+            &:hover{
+                box-shadow: 2px 2px 4px 2px black;
+            }
+        }
+    }
+}
