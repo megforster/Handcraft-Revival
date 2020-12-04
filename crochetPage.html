@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handcraft Revival</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        a{
+            color: black;
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+
+    </div>
+
+    <div class="container">
+        <h1 class="centered mainFont">Crochet</h1>
+        <div class="row secondaryFont">
+            <div class="col-xs-2 col-md-12 col-xl-6">
+                <div style="width: 34rem;">
+                    <div class="card-body" style="text-align: center;">
+                        <iframe width="475" height="275" src="https://www.youtube.com/embed/KqH5gsGV8GM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-md-6 col-xl-3">
+                <a href="crochetSupplies.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered noBold">Supplies Needed To Begin</h6>
+                        </div>
+                        <img class="card-img-top" src="images/crochetSupplies.jpg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-1 col-md-6 col-xl-3">
+                <a href="theBasics.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered">The Basics</h6>
+                        </div>
+                        <img class="card-img-top" src="images/crochetBasics.jpg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <div class="row secondaryFont">
+            <div class="col-xs-1 col-md-6 col-xl-3">
+                <a href="wip.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered">Projects For Beginners</h6>
+                        </div>
+                        <img class="card-img-top" src="images/crochetBeginnerProjects.jpg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-1 col-md-6 col-xl-3">
+                <a href="crochetHistory.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered">History of Crochet</h6>
+                        </div>
+                        <img class="card-img-top" src="images/crochetHistory.jpg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-1 col-md-6 col-xl-3">
+                <a href="wip.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered">Popular Crocheters</h6>
+                        </div>
+                        <img class="card-img-top" src="images/popularCrochet.jpeg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="wip.html">
+                    <div class="card primaryBackgroundLight cardMargin" style="width: 16rem;">
+                        <div class="card-body">
+                          <h6 class="card-title centered">Advanced Resources</h6>
+                        </div>
+                        <img class="card-img-top" src="images/crochetAdvanced.jpg" alt="Card image cap" height="253">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#navigation").load("navigationBar.html #navigation-bar"); 
+        });
+    </script>
+</body>
+</html>

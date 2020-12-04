@@ -16,7 +16,7 @@
     <div id="container">
         <div class="row">
             <div class="col-md">
-                <form class="needs-validation card p-3 primaryBackgroundLight" novalidate>
+                <form id="newResource" class="needs-validation card p-3 primaryBackgroundLight" novalidate>
                     <h4 class="centered mainFont">Suggest A New Tutorial/Learning Resource</h4>
                     <div class="card-body secondaryFont">
                         <div class="form-group row">
@@ -76,13 +76,14 @@
                         </div>
                         </div>
                         <button class="btn mainFont formSubmit" type="submit">Submit Suggestion!</button>
+                        <button class="btn mainFont formReset" type="reset">Reset</button>
                     </div>  
                 </form>
                 <br>
                 <img src="images/logo.png" class="centeredImage">
             </div>
             <div class="col-md">
-                <form class="needs-validation card p-3 primaryBackgroundLight" novalidate>
+                <form id="newCraftCategory"class="needs-validation card p-3 primaryBackgroundLight" novalidate>
                     <h4 class="centered mainFont">Suggest A New Craft Category</h4>
                     <div class="card-body secondaryFont">
                         <div class="form-group row">
@@ -99,11 +100,11 @@
                         </div>
                         <div class="form-group row ml3">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" name="Similar" type="checkbox" id="checkYes" value="Yes">
+                                <input class="form-check-input checkbox" name="Similar" type="checkbox" id="checkYes" value="Yes">
                                 <label class="form-check-label" for="checkYes">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" name="Similar" type="checkbox" id="checkNo" value="No">
+                                <input class="form-check-input checkbox" name="Similar" type="checkbox" id="checkNo" value="No">
                                 <label class="form-check-label" for="checkNo">No</label>
                             </div>
                             <div id="checkboxInvalid" class="invalid-feedback">
@@ -141,13 +142,14 @@
                         </div>
                         </div>
                         <button id = "craftCategorySubmit" class="btn formSubmit mainFont" type="submit">Submit Suggestion!</button>
+                        <button class="btn mainFont formReset" type="reset">Reset</button>
                     </div>
                 </form>
                 <br>
                 <img src="images/logo.png" class="centeredImage">
             </div>
             <div class="col-md">
-                <form class="needs-validation card p-3 primaryBackgroundLight" novalidate>
+                <form id="newSiteImprovement" class="needs-validation card p-3 primaryBackgroundLight" novalidate>
                     <h4 class="centered mainFont">Suggest An Improvement To The Site</h4>
                     <div class="card-body secondaryFont">
                         <div class="form-group row">
@@ -169,6 +171,7 @@
                             </div>
                         </div>
                         <button class="btn formSubmit mainFont" type="submit">Submit Suggestion!</button>
+                        <button class="btn mainFont formReset" type="reset">Reset</button>
                     </div>
                 </form>
                 <br>
@@ -195,14 +198,15 @@
                 var validation = Array.prototype.filter.call(forms, function(form) {
                 form.addEventListener('submit', function(event) {
                     var failed = false;
-                    
-                    let checked = $("input[type=checkbox]:checked").length;
-                    if(checked!=1){
-                        $("[name='Similar']").attr('required', true);
-                        $("#checkboxInvalid").css("display","block")
-                    }else{
-                        $("[name='Similar']").attr('required', false);
-                        $("#checkboxInvalid").css("display","none")
+                    if(form.getElementsByClassName("checkbox").length>0){
+                        let checked = $("input[type=checkbox]:checked").length;
+                        if(checked!=1){
+                            $("[name='Similar']").attr('required', true);
+                            $("#checkboxInvalid").css("display","block")
+                        }else{
+                            $("[name='Similar']").attr('required', false);
+                            $("#checkboxInvalid").css("display","none")
+                        }
                     }
 
                     if (form.checkValidity() === false) {

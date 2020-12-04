@@ -6,6 +6,11 @@
     font-family: 'Open Sans';
     src:url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
+@media screen and (max-width: 1024px) {
+    .carousel {
+        display: none !important;
+    }
+}
 
 $color-primary-light:#a9d88d;
 
@@ -51,7 +56,8 @@ $secondary-font: "Open Sans", sans-serif;
     width: 1000px;
 }
 
-.formSubmit{
+.formSubmit, 
+.formReset{
     border: 1px solid black;
     &:hover{
         box-shadow: 2px 2px 4px 2px black;
